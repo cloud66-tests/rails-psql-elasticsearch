@@ -25,3 +25,8 @@ This sample can be deployed to Heroku with no change. With 2 steps application w
 * Install SearchBox ElasticSearch Addon.
 
 Deploy sample application and experience real time search.
+
+
+## In Action
+
+[Demo on Heroku!](searchbox-elasticsearch-rails.herokuapp.com)
