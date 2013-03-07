@@ -29,4 +29,4 @@ Deploy sample application and experience real time search.
 
 ## In Action
 
-[Demo on Heroku!](searchbox-elasticsearch-rails.herokuapp.com)
+[Demo on Heroku!](http://searchbox-elasticsearch-rails.herokuapp.com)
