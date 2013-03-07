@@ -8,6 +8,8 @@ To test SearchBox.io's search features navigate to Manage Documents, create a ne
 
 "Reindex All" at Manage Documents view will index all documents in database in one shot (Paging can be used if required). It will delete old index if exists, create a new index and it will index all documents at database with Bulk API.
 
+Auto complete feature completes entered query after 3 characters according to name property.
+
 Sample application is using [Tire](https://github.com/karmi/tire) Ruby ElasticSearch client to integrate with SearchBox.io.
 
 ## Local Setup
