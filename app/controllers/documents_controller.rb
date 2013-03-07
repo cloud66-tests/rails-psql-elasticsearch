@@ -4,13 +4,18 @@ class DocumentsController < ApplicationController
     @documents = Document.search params[:query]
   end
 
+  def auto_complete
+    @documents = Document.search "name.autocomplete:#{params[:query]}"
+    respond_to do |format|
+      format.json { render json: @documents.collect{|doc| doc.name} }
+    end
+  end
+
   def bulk_index
 
     # Delete index if exists then create
-    Tire.index 'documents' do
-      delete
-      create
-    end
+    Document.index.delete
+    Document.create_elasticsearch_index
 
     Document.index.import Document.all
     redirect_to documents_path, notice: 'All documents are indexed (Bulk Index).'
