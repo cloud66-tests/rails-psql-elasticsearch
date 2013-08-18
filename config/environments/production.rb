@@ -65,9 +65,10 @@ RailsSample::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  Tire.configure do
-    url ENV['SEARCHBOX_URL']
-  end
+  #Tire.configure do
+  #  url ENV['SEARCHBOX_URL']
+  #end
 
+  ENV['ELASTICSEARCH_URL'] = ENV['SEARCHBOX_URL']
 
 end
