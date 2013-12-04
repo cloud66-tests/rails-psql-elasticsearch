@@ -3,3 +3,8 @@ production:
   host: localhost
   username: tja
   password: tjena
+development:
+  adapter: postgresql
+  host: localhost
+  username: tja
+  password: tjena  
