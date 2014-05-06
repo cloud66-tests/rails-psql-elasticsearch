@@ -68,7 +68,4 @@ RailsSample::Application.configure do
   Tire.configure do
     url <%= ENV['ELASTICSEARCH_ADDRESS'] %>:9200
   end
-
-  #ENV['ELASTICSEARCH_URL'] = ENV['SEARCHBOX_URL']
-
 end
