@@ -66,6 +66,6 @@ RailsSample::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
   Tire.configure do
-    url "<%= ENV['ELASTICSEARCH_ADDRESS'] %>:9200"
+    url "#{ENV['ELASTICSEARCH_ADDRESS']}:9200"
   end
 end
