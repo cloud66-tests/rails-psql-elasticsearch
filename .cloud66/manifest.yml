@@ -1,15 +1,18 @@
 production: 
   rails: 
-    server:
-      unique_name: railspsqlelastic1
-      vendor: 'digitalocean'
-      region: '4'
-      size: '65'
+    servers:
+      server:
+        unique_name: railspsqlelastic1
+        vendor: 'digitalocean'
+        region: '4'
+        size: '65'
     configuration:
       ruby_version: 2.1.2
   postgresql:
-    server: 
-      same_as: railspsqlelastic1
+    servers:
+      server: 
+        same_as: railspsqlelastic1
   elasticsearch:
-    server: 
-      same_as: railspsqlelastic1
+    servers:
+      server: 
+        same_as: railspsqlelastic1
