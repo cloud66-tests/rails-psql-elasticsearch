@@ -3,9 +3,9 @@ production:
     servers:
       - server:
           unique_name: railspsqlelastic1
-          vendor: 'aws'
-          region: 'us-east-1'
-          size: 'm3.medium'
+          vendor: 'azure'
+          region: 'Central US'
+          size: 'Small'
     configuration:
       ruby_version: 2.1.2
   postgresql:
